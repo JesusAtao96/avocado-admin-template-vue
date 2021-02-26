@@ -1,0 +1,17 @@
+.c-dashboard {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: $header-height 1fr;
+  grid-template-columns: min-content 1fr;
+
+  /* @include md() {
+        grid-template-columns: $nav-min-width 1fr;
+    } */
+
+  &__main {
+    grid-column: 2 / 3;
+    grid-row: 2/ 3;
+    background-color: #f4f7fa;
+    padding: 32px;
+  }
+}
